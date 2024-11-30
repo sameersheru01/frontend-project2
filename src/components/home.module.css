@@ -1,0 +1,95 @@
+.heroContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fdfdfd;
+  }
+  
+  .leftSection {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .leftSection h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  
+  .leftSection h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .leftSection .highlight {
+    color: #ff6b00;
+  }
+  
+  .leftSection p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .inputContainer input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  .inputContainer button {
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .rightSection {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mainImage {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notificationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .notification {
+    background: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+  
+  .notification p {
+    font-weight: bold;
+  }
+  
+  .notification span {
+    color: #555;
+    font-size: 0.9rem;
+  }
+  

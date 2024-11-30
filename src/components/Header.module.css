@@ -1,0 +1,126 @@
+.header {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    /* border-bottom: 1px solid #ddd; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 20px;
+  }
+  
+  /* Top Info Bar */
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAFA;
+    /* background-color: red; */
+    /* padding: 10px 20px; */
+    font-size: 14px;
+    color: #333;
+    border-radius: 0 0 10px 10px;
+  }
+  .details{
+    flex: 1;
+    padding: 10px 17px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .location {
+    color: #333;
+  }
+  
+  .changeLocation {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .changeLocation:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Navigation Bar */
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    /* background-color: #218838; */
+    padding: 9px;
+    border-radius: 120px;
+    font-family: Poppins;
+/* font-size: 18px; */
+font-weight: 500;
+line-height: 27px;
+text-align: left;
+
+  }
+  
+  .navLink:hover {
+    color: #fff;
+    background-color: orange;
+
+  }
+  
+  /* Actions Section */
+  .actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .loginButton {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 120px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cartButton span{
+    border-right: 1px solid #FFFFFF;
+    padding: 11px;
+  }
+  .cartButton {
+    background-color: #028643;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cartButton:hover {
+    background-color: #218838;
+  }
+  
+  .loginButton {
+    background-color: #03081F;
+    color: white;
+  }
+  
+  .loginButton:hover {
+    background-color: #111;
+  }
+  
