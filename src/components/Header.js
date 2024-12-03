@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 
-function Header() {
+function Header({onToggle}) {
   return (
     <header className={styles.header}>
       {/* Top Info Bar */}
@@ -17,7 +17,7 @@ function Header() {
           </a>
         </span>
         </div>
-        <button className={styles.cartButton}>
+        <button className={styles.cartButton} onClick={onToggle}>
             <span>🛒 My Cart</span>
             <span>🛒 My Cart</span>
             <span>🛒 My Cart</span>

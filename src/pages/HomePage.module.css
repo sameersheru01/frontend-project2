@@ -1,0 +1,10 @@
+.img1 img,.img2 img,.img3 img,.img4 img,.img5 img{
+    width: 100%;
+    padding: 20px;
+}
+.img4 img{
+    border-radius: 30px;
+}
+.img4{
+    display: flex;
+}

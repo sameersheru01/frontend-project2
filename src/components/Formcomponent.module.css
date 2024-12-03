@@ -50,6 +50,8 @@ text-align: left;
     border: 1px solid #00000066;
     border-radius: 100px;
     padding: 8px;
+    margin: 0;
+    width: 465px;
 }
 
 button{
@@ -77,3 +79,14 @@ text-align: center;
 color: #FC8A06;
 cursor: pointer;
 }
+.error{
+    color: red;
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+    margin: 0;
+    font-size: 15px;
+ }
+ .formbox input{
+    border: 1px solid red;
+ }

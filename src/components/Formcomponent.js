@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import styles from './Formcomponent.module.css'
 
@@ -12,7 +12,7 @@ function Formcomponent() {
     password:"",
 }); 
 const [errors, setErrors] = useState({});
-// const navigate = useNavigate();
+const navigate = useNavigate();
 
 const cleardata = ()=>{setFormdata({
   name:"",
@@ -36,13 +36,13 @@ const submmited = async(e)=>{
       const {email, password} = formdata;
       const loginData = {email, password};
       try {
-          // const response = await axios.post('https://promanager-backend-kr8u.onrender.com/api/v1/login', loginData);
-          console.log(loginData);
-          // if(response.status==200){ 
-          //     const token = localStorage.setItem('token', response.data.token);
-          //     cleardata()
-          //     navigate("/Dashboard")
-          //   };
+          const response = await axios.post('http://localhost:5000/users/login', loginData);
+          if(response.status==200){ 
+              const token = localStorage.setItem('token', response.data.token);
+              cleardata()
+              navigate("/")
+              console.log(loginData);
+            };
       } catch (error) {
           if (error.response && error.response.data.error) {
               setErrors(error.response.data.error);
@@ -53,13 +53,13 @@ const submmited = async(e)=>{
       }
   }else{
       try {
-          const response = await axios.post('https://promanager-backend-kr8u.onrender.com/api/v1/register', formdata);
+          const response = await axios.post('http://localhost:5000/users/register', formdata);
           
           console.log(response.data.message);
-          // if(response.status==201){ 
-          //     const token = localStorage.setItem('token', response.data.token);
-          //     navigate("/Dashboard")
-          //   };
+          if(response.status==201){ 
+            //   const token = localStorage.setItem('token', response.data.token);
+              setIslogin(false);
+            };
           setErrors({})
       } catch (error) {
           if (error.response && error.response.data.error) {

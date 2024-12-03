@@ -1,0 +1,56 @@
+.mapWrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mapContainer {
+    position: relative;
+    height: 400px;
+  }
+  
+  /* Floating Info Box */
+  .infoBox {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #101828;
+    color: white;
+    padding: 15px;
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures it stays above the map */
+  }
+  
+  .infoBox h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .subHeading {
+    color: #ffa500; /* Orange color */
+    margin-bottom: 10px;
+  }
+  
+  .infoBox p {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  
+  .infoBox a {
+    color: #ffa500;
+    text-decoration: none;
+  }
+  
+  .infoBox a:hover {
+    text-decoration: underline;
+  }
+  

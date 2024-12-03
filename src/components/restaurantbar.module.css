@@ -1,32 +1,57 @@
-.restaurantBar{
+.restaurantBar {
     display: flex;
     flex-direction: column;
     gap: 13px;
-}
-.p{
+    padding: 20px;
+    width: 100%; /* Adjusts dynamically to parent container */
+  }
+  
+  .title {
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .p{
     font-family: Poppins;
 font-size: 32px;
 font-weight: 700;
 line-height: 48px;
 text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
 
-}
-.image{
+  }
+  .restaurants {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 1; /* Adjusts layout dynamically on smaller screens */
+  }
+  
+  .image {
     display: flex;
     flex-direction: column;
-    width: 238px;
-}
-.image p{
-    background-color: #FC8A06;
-    color: aliceblue;
+    flex: 1 1 30%; /* Allows 3 items per row with dynamic scaling */
+    max-width: 238px; /* Restricts the max size */
+  }
+  
+  .image img {
+    width: 100%; /* Scales with parent container */
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .image p {
+    background-color: #fc8a06;
+    color: white;
     text-align: center;
     border-radius: 0 0 10px 10px;
     height: 29px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.restaurants{
-    display: flex;
-    gap: 8px;
-}
+  }
+  

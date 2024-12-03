@@ -1,0 +1,212 @@
+.Cart{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+}
+.sharesection{
+    background-color: #FC8A06;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.sharesection p{
+    font-family: Poppins;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.6px;
+text-align: left;
+
+}
+.sharesection button{
+    background-color: #fff;
+    color: #FC8A06;
+}
+.basket img{
+    width: 58px;
+    height: 58px;
+}
+.basket p{
+    font-family: Poppins;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+text-align: left;
+
+}
+.basket{
+    background-color: #028643;
+    color: #fff;
+    border: 1px solid #0000001C;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    border: 1px solid #00000033
+}
+.quantity{
+    background-color:#FC8A06 ;
+    color: #fff;
+    padding: 10px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-family: Poppins;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+justify-content: center;
+}
+.item button{
+    background-color: #F9F9F9;
+    color: red;
+    /* width: 40px; */
+}
+.price{
+    color: #028643;
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 25px;
+text-align: left;
+}
+.name{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.des{
+    font-family: Poppins;
+font-size: 15px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.billing div p{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.billing div{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: ; */
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+
+}
+.billing{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #00000033
+}
+.totaldelivery{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #00000033
+}
+.total{
+    background-color: #FC8A06CC;
+    color: #fff;
+    /* display: flex; */
+    border-radius: 8px;
+}
+.total .Subtotal p{
+    font-family: Poppins;
+font-size: 36px;
+font-weight: 600;
+line-height: 25px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.total .Subtotal{
+    display: flex;;
+    border-radius: 120px;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+.coupon{
+    border: 1px solid #CFCFCF;
+    border-radius: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.delivery{
+    display: flex;
+    gap: 10px;
+    padding: 18px;
+}
+.active{
+    background-color: #EEEEEE;
+}
+.deliveryCard{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    /* border-right: 1px solid #00000033; */
+}
+.checkout p{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #fff;
+}
+.checkout{
+    background-color: #028643;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    gap: 22px;
+    margin: 20px;
+}

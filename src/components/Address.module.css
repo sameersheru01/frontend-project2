@@ -1,0 +1,183 @@
+/* Container */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Address List */
+  .addressList {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Add Address Card */
+  .addAddressCard {
+    width: 300px;
+    height: 220px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .addAddressCard:hover {
+    border-color: orange;
+  }
+  
+  .addIcon {
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 10px;
+  }
+  
+  /* Address Card */
+  .addressCard {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .defaultTag {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 10px;
+  }
+  
+  .address {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .phone {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Buttons */
+  .actions {
+    /* margin-top: 15px; */
+    display: flex;
+    gap: 10px;
+  }
+  
+  .editButton {
+    background-color: #fff;
+    border: none;
+    color: #e69500;
+    padding: 8px 20px;
+    /* border-radius: 4px; */
+    cursor: pointer;
+  }
+  
+  
+  .btn{
+    /* padding: 20px; */
+    border-right: 1px solid #ccc;
+  }
+  .removeButton {
+    background-color: white;
+    /* border: 1px solid red; */
+    color: #e69500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .saveButton {
+    background-color: #fc8a06;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .saveButton:hover {
+    background-color: #e57d00;
+  }
+  
